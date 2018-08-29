@@ -1,0 +1,213 @@
+body{
+	font-family: 'Roboto Slab', serif;
+}
+h1,h2,h3{
+	font-family: 'Roboto Slab', serif;
+}
+header {
+	background-color: #fff !important;
+	border-bottom: 1px solid #aaa;
+
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+ .active1{
+    color:red;
+    font-weight:bold;
+}
+.remit img {
+    width: 70% !important;
+}
+header li a{
+	font-size:18px;
+}
+/* header li {
+	margin-right: 30px;
+} */
+
+/* header large */
+header.large {
+	height: 120px;
+}
+header.large img {
+  margin-top: 0px;
+  width:200px;
+}
+header.large li {
+	margin-top: 30px;
+}
+
+/* header small */
+
+header.small {
+	height: 50px;
+}
+header.small img {
+	width:150px;
+}
+header.small li {
+	margin-top: 10px;
+	margin-bottom:5px;
+}
+
+/* Transitions */
+
+header,
+nav,
+a,
+img,
+li {
+	transition: .7s all;
+	-moz-transition: .7s all;
+	-webkit-transition: .7s all;
+	-o-transition: .7s all;
+}
+.bg-dark{
+	background-color: #fff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #111 !important;
+    font-style: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.banner{
+	background:url('../images/City.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:900px;
+	background-attachment:fixed;
+}
+.banner .img-mobile-section{
+	
+	margin-top:310px;
+	/* margin-left:40px; */
+}
+.img-mobile-section h1{
+    color:#1C2952;
+    font-family: 'Roboto Slab', serif;;
+    margin-top:-10px;
+}
+.img-mobile-section p{
+	color:#fff;
+    font-family: 'Roboto Slab', serif;;
+	margin-top:-10px;
+}
+.banner .img-mobile{
+	width:auto;
+	height:auto;
+}
+h2{
+font-size:28px;	
+}
+h3{
+	font-size:18px;
+}
+.powerfullFeatures .carousel-indicators li{
+	text-indent:0 !important;
+}
+
+.powerfullFeatures .carousel-indicators li img
+{
+    width: 6px  !important;
+}
+.powerfullFeatures .carousel-indicators li:hover{
+	cursor:pointer;
+}
+.whyUs{
+	background:#1C2952;
+        color:#FFFFFF;
+
+        
+}
+.testimonials{
+	height:500px;
+	background:#1C2952;
+        color:#FFFFFF;
+        
+}
+.testimonials .carousel-indicators{
+	top:105%;
+}
+.futureFunctionality img{
+	width:160px;
+}
+.footer{
+	background:#111;
+	color:#fff;
+	padding:25px 0px;
+}
+/* #back2Top {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+} */
+#back2Top {
+   
+   border-radius: 50%;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+   /*  -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg); */
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+
+}
+#back2Top .fa-chevron-up{
+	padding:10px 10px;
+}
+#back2Top{
+		 -webkit-animation: color-change 2s infinite;
+        -moz-animation: color-change 2s infinite;
+        -o-animation: color-change 2s infinite;
+        -ms-animation: color-change 2s infinite;
+        animation: color-change 2s infinite;
+    }
+
+    @-webkit-keyframes color-change {  
+        0% { background-color: #1c4b8e; }
+        50% { background-: #3e454c; }
+        100% { background-: #1c4b8e; }
+    }
+    @-moz-keyframes color-change {
+       0% { background-color: #1c4b8e; }
+        50% { background-: #3e454c; }
+        100% { background-: #1c4b8e; }
+    }
+    @-ms-keyframes color-change {
+        0% { background-color: #1c4b8e; }
+        50% { background-: #3e454c; }
+        100% { background-: #1c4b8e; }
+    }
+    @-o-keyframes color-change {
+       0% { background-color: #1c4b8e; }
+        50% { background-: #3e454c; }
+        100% { background-: #1c4b8e; }
+    }
+    @keyframes color-change {
+        0% { background-color: #1c4b8e; }
+        50% { background-: #3e454c; }
+        100% { background-: #1c4b8e; }
+    }

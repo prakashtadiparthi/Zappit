@@ -1,0 +1,135 @@
+@media (min-width:320px) and (max-width:480px){
+	
+.whyUs h2{
+	 text-align: center !important;
+    padding-top: 0px !important;
+    padding-bottom: 15px;
+}
+	.banner{
+	height:100%;
+	}
+	.banner .img-mobile-section {
+    margin-top: 80px;
+    /* margin-left: 40px; */
+}
+.banner .img-mobile-section h1{
+	font-size:28px;
+}
+.banner img.float-right{
+	float:none !important;
+}
+.img-center{
+	text-align:center !important;
+	}
+.bottom-logo .text-left, .bottom-logo .text-right{
+	text-align:center !important;
+	padding-top:15px;
+}
+	.navbar-toggler{
+	background:#78bd44;
+	}
+	
+	.powerfullFeatures .carousel .carousel-item img.float-right{
+		float:none !important;
+		margin-bottom:20px;
+	}
+	.powerfullFeatures .carousel .carousel-item h3.text-left{
+		text-align:center !important;
+		margin-bottom:20px;
+	}
+	.powerfullFeatures .carousel .carousel-indicators{
+		bottom:-30px;
+	}
+	.testimonials{
+	height:auto;
+	}
+}	
+@media (min-width:500px) and (max-width:768px){
+	.banner{
+	height:100%;
+	}
+	.whyUs h2{
+	 text-align: center !important;
+    padding-top: 0px !important;
+    padding-bottom: 15px;
+}
+	.banner .img-mobile-section {
+    margin-top: 155px;
+    /* margin-left: 40px; */
+}
+.banner .img-mobile-section h1{
+	font-size:28px;
+}
+.banner img.float-right{
+	float:none !important;
+}
+.img-center{
+	text-align:center !important;
+	}
+.bottom-logo .text-left, .bottom-logo .text-right{
+	text-align:center !important;
+	padding-top:15px;
+}
+	.navbar-toggler{
+	background:#111;
+	}
+	.powerfullFeatures .carousel .carousel-item img.float-right{
+		float:none !important;
+		margin-bottom:20px;
+	}
+	.powerfullFeatures .carousel .carousel-item h3.text-left{
+		text-align:center !important;
+		margin-bottom:20px;
+	}
+	.powerfullFeatures .carousel .carousel-indicators{
+		bottom:-30px;
+	}
+	.testimonials{
+	height:auto;
+	}
+}
+@media (min-width:769px) and (max-width:991px){
+	.banner{
+	height:100%;
+	}
+	.banner .img-mobile-section {
+    margin-top: 155px;
+    /* margin-left: 40px; */
+}
+
+.whyUs h2{
+	 text-align: center !important;
+    padding-top: 0px !important;
+    padding-bottom: 15px;
+}
+.banner .img-mobile-section h1{
+	font-size:28px;
+}
+.banner img.float-right{
+	float:none !important;
+}
+.img-center{
+	text-align:center !important;
+	}
+.bottom-logo .text-left, .bottom-logo .text-right{
+	text-align:center !important;
+	padding-top:15px;
+}
+	.navbar-toggler{
+	background:#111;
+	}
+	.powerfullFeatures .carousel .carousel-item img.float-right{
+		float:none !important;
+		margin-bottom:20px;
+	}
+	.powerfullFeatures .carousel .carousel-item h3.text-left{
+		text-align:center !important;
+		margin-bottom:20px;
+	}
+	.powerfullFeatures .carousel .carousel-indicators{
+		bottom:-30px;
+	}
+	.testimonials{
+	height:auto;
+	}
+}

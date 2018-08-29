@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mobilize your money</title>
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/shortkeys.css">
+   <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+  <script>
+$(document).on("scroll", function(){
+	if($(document).scrollTop()>100) {
+		$("header").removeClass("large").addClass("small");
+	} else {
+		$("header").removeClass("small").addClass("large");
+	}
+	
+});
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".home").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  $(".features").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+  $(".testimo").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 1000, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+  $(".why").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+  $(".download").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+});
+</script>
+
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'bTFKZEZFoAgcHHnec';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+
+<script>
+	$(document).ready(function () {
+		$(document).on("scroll", onScroll);
+ 
+		$('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			$(document).off("scroll");
+ 
+			$('a').each(function () {
+				$(this).removeClass('active1');
+			})
+			$(this).addClass('active1');
+ 
+			var target = this.hash;
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top+2
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+				$(document).on("scroll", onScroll);
+			});
+		});
+	});
+ 
+	function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('.navbar-nav a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+				$('.navbar-nav li a').removeClass("active1");
+				currentLink.addClass("active1");
+			}
+			else{
+				currentLink.removeClass("active1");
+			}
+		});
+	}
+</script>
+</head>
+<body>
+<header class="large">
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a href="index.html" class="navbar-brand"><img class="img-fluid" src="images/zappit gold_New.png"/></a>
+	<div class="collapse navbar-collapse justify-content-end" id="navbar">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="#home" class="nav-link home active1" data-toggle="collapse" data-target=".collapse.show" >Home </a></li>
+			<li class="nav-item"><a href="#features" class="nav-link features" data-toggle="collapse" data-target=".collapse.show">Features</a></li>
+			<li class="nav-item"><a href="#why" class="nav-link why" data-toggle="collapse" data-target=".collapse.show">Why Zappit</a></li>
+			<li class="nav-item"><a href="#testimonials" class="nav-link testimo" data-toggle="collapse" data-target=".collapse.show">Testimonials</a></li>
+			<li class="nav-item"><a href="#download" class="nav-link download" data-toggle="collapse" data-target=".collapse.show">Download</a></li>
+			<li class="nav-item"><a href="#login" class="nav-link login" data-toggle="collapse" data-target=".collapse.show">Log In</a></li>
+		
+		</ul>
+	</div>
+</nav>
+</header>
+
+<div class="banner" id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 img-mobile-section row">
+					<img class="img-fluid mx-auto d-block mt-50 img-mobile" src="images/Two phones.png"/>
+					
+						<!-- <div class=" col-lg-6 col-md-6 col-xs-12 img-center ">
+							<img class="img-fluid  w-per-50 float-right " src="images/google.png"/>
+						</div>
+						<div class=" col-lg-6 col-md-6 col-xs-12 img-center">
+							<img class="img-fluid  w-per-50" src="images/apple.png"/>
+						</div> -->
+					
+			</div>
+			
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 img-mobile-section">
+				<h1>MOBILIZE YOUR MONEY WITH ZAPPIT</h1>
+				<p class="">Robust one of a kind mobile application to send and receive money from friends and family.</p>
+				<img class="img-fluid" src="images/page 61.png"/>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="powerfullFeatures pt-90" id="features">
+	<div class="container">
+		<div class="row">
+			<div class=" offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-xs-1 col-xs-10 text-center">
+				<h2 class="text-center">POWERFULL FEATURES</h2>
+				<small class="text-center">Designed to facilitate both local and international remittances to anyone, instantly.</small>
+				<div class="carousel slide pt-100 ml-auto mr-auto" data-ride="carousel" id="slider">
+					<ol class="carousel-indicators list-unstyled">
+						<li class="active" data-slide-to="0"  data-target="#slider"><img src="images/Slider.png"/></li>
+						<li class="" data-slide-to="1"  data-target="#slider"><img src="images/Slider.png" class="center-block"/></li>
+						<li class="" data-slide-to="2"  data-target="#slider"><img src="images/Slider.png"/></li>
+						<li class="" data-slide-to="3"  data-target="#slider"><img src="images/Slider.png"/></li>
+						<li class="" data-slide-to="4"  data-target="#slider"><img src="images/Slider.png"/></li>
+						<li class="" data-slide-to="5"  data-target="#slider"><img src="images/Slider.png"/></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+										<div class="row">
+												<div class="col-xl-4 col-lg-4 co-md-4 col-sm-12 col-xs-12">
+													<img class="img-fluid float-right" src="images/local transfer.png">
+												</div>
+												<div class="col-xl-8 col-lg-8 co-md-8 col-sm-12 col-xs-12">
+												<h3 class="text-left">FREE LOCAL TRANSFERS</h3>
+												<p class="text-justify">  Free transfers between you & your friends that use Zappit. We call it <b>Z2Z</b> when you send money to friend or family in the same country and in the same currency, it arrives in real time. Just send from your Zappit account to their Zappit account instantly.</p>
+											</div>
+										</div>
+										
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<img class="img-fluid" src="images/White phone pixel.png"/>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+										<div class="row">
+												<div class="col-xl-4 col-lg-4 co-md-4 col-sm-12 col-xs-12">
+													<img class="img-fluid float-right" src="images/international transfer.png">
+												</div>
+												<div class="col-xl-8 col-lg-8 co-md-8 col-sm-12 col-xs-12">
+												<h3 class="text-left">FAST INTERNATIONAL TRANSFERS</h3>
+												<p class="text-justify">  Book today, send today and receive in your account today. We strive to complete all transactions same day that they are booked or within ten hours of receiving the booked transaction in our system.</p>
+											</div>
+										</div>
+										
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<img class="img-fluid" src="images/White phone pixel.png"/>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+										<div class="row">
+												<div class="col-xl-4 col-lg-4 co-md-4 col-sm-12 col-xs-12">
+													<img class="img-fluid float-right" src="images/free to use.png">
+												</div>
+												<div class="col-xl-8 col-lg-8 co-md-8 col-sm-12 col-xs-12">
+												<h3 class="text-left">FREE TO USE</h3>
+												<p class="text-justify">  Download the application, register and start using immediately.</p>
+											</div>
+										</div>
+										
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<img class="img-fluid" src="images/White phone pixel.png"/>
+								</div>
+							</div>	
+						</div>
+						
+						
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+										<div class="row">
+												<div class="col-xl-4 col-lg-4 co-md-4 col-sm-12 col-xs-12">
+													<img class="img-fluid float-right" src="images/countries.png">
+												</div>
+												<div class="col-xl-8 col-lg-8 co-md-8 col-sm-12 col-xs-12">
+												<h3 class="text-left">TRANSFER TO 100+ COUNTRIES</h3>
+												<p class="text-justify"></p>
+											</div>
+										</div>
+										
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<img class="img-fluid" src="images/White phone pixel.png"/>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+										<div class="row">
+												<div class="col-xl-4 col-lg-4 co-md-4 col-sm-12 col-xs-12">
+													<img class="img-fluid float-right" src="images/simple to use.png">
+												</div>
+												<div class="col-xl-8 col-lg-8 co-md-8 col-sm-12 col-xs-12">
+												<h3 class="text-left">SIMPLE & EASY TO USE</h3>
+												<p class="text-justify"> Zappit gives you the privilege of any time and anywhere banking, and there is no limit to the number of times you can access your account.</p>
+											</div>
+										</div>
+										
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<img class="img-fluid" src="images/White phone pixel.png"/>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+										<div class="row">
+												<div class="col-xl-4 col-lg-4 co-md-4 col-sm-12 col-xs-12">
+													<img class="img-fluid float-right" src="images/secure.png">
+												</div>
+												<div class="col-xl-8 col-lg-8 co-md-8 col-sm-12 col-xs-12">
+												<h3 class="text-left">SECURE</h3>
+												<p class="text-justify"> We adhere to the highest security protocols including PCI DSS Level One. We have our own integrated AML Lists that update from the OFAC Lists. This is coupled to the security that we have with our partner banks and exchange houses.</p>
+											</div>
+										</div>
+										
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<img class="img-fluid" src="images/White phone pixel.png"/>
+								</div>
+							</div>	
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="whyUs mt-100 pt-80" id="why">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 hand-img d-none d-md-block">
+				<img class="img-fluid" src="images/Hand.png"/>
+			</div>
+			<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+			<h2 class="pt-50">WHY CHOOSE US ?</h2>
+			<p>At Zappit we believe that you the user should be in charge and be able to confidently transfer money without having to pay huge fees just for that privilege. Transfer your money without the extra costs involved at banks and money exchange houses.</p>
+			<p>See immediately exactly what will be received by your friends & family.</p>
+			<p>No hidden costs, transparent rates that you choose and book in real-time.</p>
+			</div>
+			<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 d-block d-md-none d-block d-lg-none  d-block d-xl-none">
+				<img class="img-fluid" src="images/Hand.png"/>
+			</div>
+		</div>
+	</div>
+</div>
+ <div class="remit pt-90" >
+ 	<div class="container">
+ 			<div class="row">
+ 				<div class=" offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10 offset-xs-1 col-xs-10 text-center">
+ 						<h2 class="text-center pb-30">REMIT INTERNATIONALLY</h2>
+ 						<p class="pb-30">Just mention how much you're transferring, which currency and who to send it to. Choose from your bank account or your direct debit card. Transfer to most countries takes less than 1-2 business days. Track your transfer online or with the mobile app. All your transactions are secured and with two-factor authentication.</p>
+ 						<img class="img-fluid" src="images/Flags.png"/>
+ 				</div>
+ 			</div>
+ 	</div>
+ </div>
+ <br>
+  				
+ <div class="testimonials pb-60 pt-90" id="testimonials">
+ 	<div class="container-fluid">
+ 		<div class="row">
+ 			<div class="col-12">
+ 				<h2 class="text-center pb-50">TESTIMONIALS</h2>
+
+ 				<div class="carousel slide mr-auto ml-auto" data-ride="carousel" id="tslider">
+ 					<ol class="carousel-indicators">
+ 						<li class="active" data-target="#tslider" data-slide-to="0"></li>
+ 						<li data-target="#tslider" data-slide-to="1"></li>
+ 						<li data-target="#tslider" data-slide-to="2"></li>
+ 					</ol>
+ 					<div class="carousel-inner" role="list-box">
+ 						<div class="carousel-item active">
+ 							<div class="row">
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/9.jpg" style="width:96px;height:96px">
+ 									<p>"Love this app it help you alot to keep track of your budget . It will let you know instantly when you have  a direct deposit or your balance drops . "</p>
+ 									<h6><i>Sully McLane</i></h6>
+ 								</div>
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/8.png" style="width:96px;height:96px">
+ 									<p>" The Zappit App is super easy to use! I highly recommend it for people on the go who like to check on their current status without having to wait on the telephone line and tell a customer representative picks up. "</p>
+ 									<h6><i>Ruben Missen</i></h6>
+ 								</div>
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/7.png" style="width:96px;height:96px">
+ 									<p>"This app is wonderful it never crashes almost anything I need t do can be done with the app. The best part about this app is the deposit check feature I literally have stopped going to the bank because of this it so awesome."</p>
+ 									<h6><i>Simone Finley</i></h6>
+ 								</div>
+ 								</div>
+ 						</div>
+ 						<div class="carousel-item">
+ 							<div class="row">
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/6.png" style="width:96px;height:96px">
+ 									<p>"The app itself is convenient and easy to manage. Customer support is easily accessible, and the app is free to use"</p>
+ 									<h6><i>Paula Jerry</i></h6>
+ 								</div>
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/5.png" style="width:96px;height:96px">
+ 									<p>"24/7 customer service, great mobile app support."</p>
+ 									<h6><i>John Frown</i></h6>
+ 								</div>
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/4.png" style="width:96px;height:96px">
+ 									<p>"Quick and easy to login from my phone, using the finger print method. I'm able to make transfers and pay bills without seeing or speaking to a representative, which I love. "</p>
+ 									<h6><i>Mike Town</i></h6>
+ 								</div>
+ 								</div>
+ 						</div>
+ 						<div class="carousel-item">
+ 							<div class="row">
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/3.png" style="width:96px;height:96px">
+ 									<p>"Super helpful app! My favorite part is the alert notifications I get every time one of my cards is used. No matter where I am or what I’m doing, I can instantly know if my card has been swiped. "</p>
+ 									<h6><i>Lara Smith</i></h6>
+ 								</div>
+ 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/2.png" style="width:96px;height:96px">
+ 									<p>"Great service and very competitive rates, thank you and keep up the good work"</p>
+ 									<h6><i>Mary Fitzgerald</i></h6>
+ 								</div>
+ 								<!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+ 									<img class="rounded-circle" src="images/7.png" style="width:96px;height:96px">
+ 									<p>"Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. "</p>
+ 									<h6><i>Sully McLane</i></h6>
+ 								</div> -->
+ 								</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div class="futureFunctionality pt-100" id="download">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-12 text-center">
+ 			<h2 class="pb-50">FUTURE FUNCTIONALITY</h2>
+ 			</div>
+ 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+ 				<img class="img-fluid pb-20" src="images/Mobile checkout.png">
+ 				<h3>Mobile Checkout</h3>
+ 			</div>
+ 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+ 				<img class="img-fluid pb-20" src="images/Delivery orders.png">
+ 				<h3>Delivery Orders</h3>
+ 			</div>
+ 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+ 				<img class="img-fluid pb-20" src="images/fund by card.png">
+ 				<h3>Fund by Card</h3>
+ 			</div>
+ 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+ 				<img class="img-fluid pb-20" src="images/pickup Orders.png">
+ 				<h3>Pickup Orders</h3>
+ 			</div>
+ 			
+ 		</div>
+ 	</div>
+ </div>
+ <div class="bottom-logo pt-100">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-12 text-center">
+ 				<img class="img-fluid" src="images/zappit gold_New.png" width="600px"/>
+ 			</div>
+ 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right">
+ 				<img class="img-fluid" src="images/google.png"/>
+ 			</div>
+ 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+ 				<img class="img-fluid" src="images/apple.png"/>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div class="footer mt-100">
+ 	<div class="container-fluid">
+ 		<div class="row">
+ 			<div class="col-12 text-center">
+ 				<h6>Copyright 2018 © Zappit. Designed & Developed by Zappitsoftware</h6>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="back2Top" title="Back to top" href="#" class="mb-20"><i class="fa fa-chevron-up"></i></div>
+<script>
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ /*Scroll to top when arrow up clicked END*/
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
