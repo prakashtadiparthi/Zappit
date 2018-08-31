@@ -4,68 +4,158 @@
 	 text-align: center !important;
     padding-top: 0px !important;
     padding-bottom: 15px;
+    margin-top: 10px;
 }
-	.banner{
-	height:100%;
+
+.navbar .navebar-togglrer collapsed{
+   height: 70px;
+}
+.navbar .img-fluid{
+   height: 90px;
+}
+.banner{
+         height: 130%;
 	}
-	.banner .img-mobile-section {
-    margin-top: 80px;
-    /* margin-left: 40px; */
+.banner .img-mobile-section {
+    margin-top: 170px;
+    height: 461px;
+    width: 420px;
+    padding-left:36px;
+	padding-right:62px;
+padding-top:-30px !important;
+  
 }
 .banner .img-mobile-section h1{
-	font-size:28px;
+	font-size:15px;
+        padding-top:10px;
+margin-top:-110px;
+       
+}
+
+	
+.banner .img-mobile-section p{
+          font:5px;
+
+          padding-top:20px;
+          padding-bottom: 40px;
+         
+         
+}
+.banner .img-mobile-section .img-fluid{
+           margin-top: -55px;
+           width: 250px;
+           height: 310px;
+
 }
 .banner img.float-right{
 	float:none !important;
 }
 .img-center{
 	text-align:center !important;
+  
+      
 	}
 .bottom-logo .text-left, .bottom-logo .text-right{
 	text-align:center !important;
 	padding-top:15px;
 }
 	.navbar-toggler{
-	background:#78bd44;
+	background:#1C2952;
 	}
+ol.carousel-indicators list-unstyled{ 
+		width:70px;
+                height:90px;
+}
 	
-	.powerfullFeatures .carousel .carousel-item img.float-right{
+.powerfullFeatures .carousel .carousel-item img.float-right{
 		float:none !important;
 		margin-bottom:20px;
-	}
-	.powerfullFeatures .carousel .carousel-item h3.text-left{
+          }
+ 
+.powerfullFeatures .carousel.img-fluid{
+		  width: 100%;
+  		overflow: hidden;
+  		position: absolute;
+  		height: 100%;
+}
+.powerfullFeatures .carousel-inner .carousel-item active float-right{
+		width: 700px;
+		height: 600px;
+		padding-right: 20px;
+		padding-left: 10px;
+		float:left;
+
+}
+.powerfullFeatures .carousel .carousel-item h3.text-left{
 		text-align:center !important;
 		margin-bottom:20px;
-	}
-	.powerfullFeatures .carousel .carousel-indicators{
-		bottom:-30px;
-	}
-	.testimonials{
+		
+                }
+.powerfullFeatures .carousel .carousel-indicators{
+		bottom:-4px;
+	        margin-top: 90px;
+    		height: 60px;
+    		width: 50px;
+    		margin-left: 140px;
+}
+.carousel slide .carousel-inner{
+	width:70px;
+	height: 90px;
+         		
+}
+.powerfullFeatures .carousel .carousel-indicators .img-fluid{
+    height: 200px;
+    width: 10px;
+    }
+.img .img-fluid float-right{  
+    height: 10px;
+    width: 30px;
+}
+\*logo*\
+.bottom-logo .img-fluid{
+		width:240;
+		height:70px;
+}
+
+
+.testimonials{
 	height:auto;
 	}
-}	
+	
 @media (min-width:500px) and (max-width:768px){
 	.banner{
 	height:100%;
 	}
-	.whyUs h2{
+.whyUs h2{
 	 text-align: center !important;
     padding-top: 0px !important;
     padding-bottom: 15px;
 }
 	.banner .img-mobile-section {
     margin-top: 155px;
+ 
+ 
     /* margin-left: 40px; */
 }
 .banner .img-mobile-section h1{
 	font-size:28px;
-}
+   
+        }
 .banner img.float-right{
 	float:none !important;
+
 }
 .img-center{
 	text-align:center !important;
+
+       
+ 
 	}
+
+.futureFunctionality .img-fluid .col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center{
+width:100px;
+height:250px:
+}
 .bottom-logo .text-left, .bottom-logo .text-right{
 	text-align:center !important;
 	padding-top:15px;
@@ -76,6 +166,8 @@
 	.powerfullFeatures .carousel .carousel-item img.float-right{
 		float:none !important;
 		margin-bottom:20px;
+                
+        
 	}
 	.powerfullFeatures .carousel .carousel-item h3.text-left{
 		text-align:center !important;
@@ -94,6 +186,7 @@
 	}
 	.banner .img-mobile-section {
     margin-top: 155px;
+
     /* margin-left: 40px; */
 }
 
@@ -104,12 +197,16 @@
 }
 .banner .img-mobile-section h1{
 	font-size:28px;
+ 
 }
 .banner img.float-right{
 	float:none !important;
+width: 90px;
+ 
 }
 .img-center{
 	text-align:center !important;
+          
 	}
 .bottom-logo .text-left, .bottom-logo .text-right{
 	text-align:center !important;
@@ -121,6 +218,8 @@
 	.powerfullFeatures .carousel .carousel-item img.float-right{
 		float:none !important;
 		margin-bottom:20px;
+               
+
 	}
 	.powerfullFeatures .carousel .carousel-item h3.text-left{
 		text-align:center !important;

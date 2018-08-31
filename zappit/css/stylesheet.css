@@ -18,7 +18,8 @@ header {
     font-weight:bold;
 }
 .remit img {
-    width: 70% !important;
+    width: 65% !important;
+  
 }
 header li a{
 	font-size:18px;
@@ -79,7 +80,7 @@ li {
 	background:url('../images/City.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:900px;
+	height:1000px;
 	background-attachment:fixed;
 }
 .banner .img-mobile-section{
@@ -90,7 +91,7 @@ li {
 .img-mobile-section h1{
     color:#1C2952;
     font-family: 'Roboto Slab', serif;;
-    margin-top:-10px;
+    margin-top:10px;
 }
 .img-mobile-section p{
 	color:#fff;
@@ -128,6 +129,7 @@ h3{
 	height:500px;
 	background:#1C2952;
         color:#FFFFFF;
+       margin-top:-20px;
         
 }
 .testimonials .carousel-indicators{
@@ -140,6 +142,7 @@ h3{
 	background:#111;
 	color:#fff;
 	padding:25px 0px;
+
 }
 /* #back2Top {
     -webkit-transform: rotate(90deg);
